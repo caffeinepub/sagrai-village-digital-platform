@@ -1,0 +1,41 @@
+{
+  "kind": "build_request",
+  "title": "Deploy Sagrai Village Digital Platform permanently to Internet Computer",
+  "projectName": "Sagrai Village",
+  "priority": "high",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Deploy the Sagrai Village Digital Platform (frontend and backend canisters) permanently to the Internet Computer mainnet so the application is accessible at a stable, permanent ICP URL without expiration.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "deploy permantly to internet computer"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The backend Motoko canister is deployed to the Internet Computer mainnet and assigned a stable canister ID.",
+        "The frontend assets canister is deployed to the Internet Computer mainnet and served at a permanent ic0.app URL.",
+        "The application is accessible via the permanent URL without requiring a local replica.",
+        "All existing features (crop marketplace, notices, gallery, orders, contact, admin panel) remain fully functional after deployment.",
+        "Internet Identity authentication continues to work on the mainnet deployment."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not alter any existing application logic, data models, or UI during the deployment process.",
+    "Preserve all existing stable state and data structures in the backend canister."
+  ],
+  "nonGoals": [
+    "Redesigning or modifying any frontend UI components.",
+    "Adding new features or pages.",
+    "Migrating to a different hosting platform or cloud provider."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

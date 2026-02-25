@@ -1,0 +1,25 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Deploy Sagrai Village to Internet Computer Mainnet",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Deploy the complete Sagrai Village Digital Platform to Internet Computer mainnet with a permanent URL, ensuring all existing features (marketplace, notices, gallery, orders, contact, admin panel, Internet Identity auth) remain fully functional.",
+      "acceptanceCriteria": [
+        "The backend Motoko canister is deployed to the Internet Computer mainnet and assigned a stable canister ID.",
+        "The frontend assets canister is deployed to the Internet Computer mainnet and served at a permanent ic0.app URL.",
+        "The application is accessible via the permanent URL without requiring a local replica.",
+        "All existing features (crop marketplace, notices, gallery, orders, contact, admin panel) remain fully functional after deployment.",
+        "Internet Identity authentication continues to work on the mainnet deployment."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/vite.config.ts",
+          "operation": "modify",
+          "description": "Verify that the Vite build configuration is optimized for Internet Computer mainnet deployment, ensuring proper asset handling, environment variable replacement for canister IDs, and correct base path configuration for ic0.app hosting. No changes needed if configuration is already correct."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "frontend/src/pages/CropsPage.tsx": "Full Crop Selling Marketplace page with search/filter, approved crop grid cards, WhatsApp contact buttons, order request for buyers, add/edit/delete for farmers, and a pending/rejected listings section for farmers.",
+  "frontend/src/pages/GalleryPage.tsx": "Village photo gallery page with responsive grid layout, lightbox viewer on click, admin add/delete controls, and empty state handling.",
+  "frontend/src/pages/NoticesPage.tsx": "Village notice board page displaying notices newest-first with title, content, poster, and date; admin can add and delete notices.",
+  "frontend/src/pages/ContactPage.tsx": "Contact page with a validated inquiry form and a village contact details section that now includes the village address, a clickable helpline number (8533034708), a clickable email (abhaypratapabhaypratap112@gmail.com), a WhatsApp button, and a village info table.",
+  "frontend/src/pages/LoginPage.tsx": "Login page that reads `adminRequired` from URL search params; shows an amber admin-access notice when redirected from the control panel, shows an access-denied message for authenticated non-admin users, and redirects admin users to `/admin` after successful login.",
+  "frontend/src/pages/AdminPage.tsx": "Admin-only panel with six tabbed sections: crop approvals (with pending count badge), all crops management, users list, notices management, gallery management, and orders overview.",
+  "frontend/src/components/Footer.tsx": "Village footer with logo, description, quick links, village info grid, and contact details including helpline and email, plus copyright and a \"Developed by Abhay Pratap\" credit that now includes a circular 40×40px avatar photo of Abhay Pratap sourced from `/assets/generated/abhay-pratap.jpg`.",
+  "frontend/src/App.tsx": "Main app with routing; AdminGuard now redirects unauthenticated users to `/login?adminRequired=true` using TanStack Router's `redirect`, shows `AccessDeniedScreen` for authenticated non-admin users, and renders `AdminPage` for admins.",
+  "frontend/src/components/AccessDeniedScreen.tsx": "New component displayed when an authenticated non-admin user tries to access /admin; shows a ShieldX icon, friendly message, and a \"Return to Home\" button.",
+  "frontend/src/components/Navbar.tsx": "Sticky navigation header; admin users now see a distinctly styled amber \"Control Panel\" link (with Settings icon) instead of the generic ⚙️ Admin label, in both desktop and mobile menus."
+}
